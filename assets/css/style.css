@@ -1,0 +1,162 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #444;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.warning {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    background-color: #fce4e4;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #555;
+    background-color: #eaf0f6;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+label:hover {
+    background-color: #d0e2f0;
+    border-color: #bbb;
+}
+
+select,
+textarea,
+button {
+    margin-bottom: 15px;
+    display: block;
+}
+
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.color-input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap between items */
+    margin-bottom: 10px;
+}
+
+.color-input-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add gap between label and input */
+}
+
+.color-input-item label {
+    flex-shrink: 0;
+}
+
+.color-input-item input.color-input {
+    width: 60px;
+}
+
+#result, #colorInputs {
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 16px;
+    word-wrap: break-word; /* Allows wrapping of long words */
+    overflow-wrap: break-word; /* Forcing long words to wrap */
+}
+
+#copyButton {
+    display: block;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+#copyButton:hover {
+    background-color: #27ae60;
+}
+
+#textAreaContainer {
+    margin-bottom: 20px;
+}
+
+#charCounter {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+p {
+    margin: 0;
+}
+
+form .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}

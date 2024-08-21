@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[ONCE HUMAN] Color Text Formatter</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <p class="warning">
+      Warning: The total length of the generated string must not exceed 140
+      characters, including text, color codes, and symbols. This limit includes
+      spaces, numbers, and symbols. Ensure your input fits within this
+      constraint to avoid cutoff issues in the game.
+    </p>
+    <form id="colorForm">
+      <label for="colorMode">Color Mode: </label>
+      <select id="colorMode">
+        <option value="letter">Letter</option>
+        <option value="word">Word</option>
+        <option value="sentence">Sentence</option>
+      </select>
+      <label for="inputText">Text: </label>
+      <div id="textAreaContainer">
+        <textarea
+          id="inputText"
+          name="inputText"
+          rows="10"
+          cols="50"
+          required
+        ></textarea>
+        <div id="charCounter">Character count: <span id="charCount">0</span>/140</div>
+      </div>
+      <div class="row">
+        <button type="button" onclick="addNewLine()">Add New Line</button>
+        <button type="button" onclick="generateColoredText()">Generate</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+      </div>
+    </form>
+
+    <div id="colorInputs"></div>
+    <div id="result"></div>
+    <button id="copyButton" style="display: none" onclick="copyToClipboard()">
+      Copy
+    </button>
+    
+    <!-- SCRIPT -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
